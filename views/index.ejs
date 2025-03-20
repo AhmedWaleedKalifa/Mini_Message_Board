@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>mini message</title>
+</head>
+<body>
+    <h1>Mini Message Board</h1>
+    <div>
+        <a class="button" href="/new">Send Message</a>
+        <h2>Messages</h2>
+        <ul>
+            <% for (let i = 0; i < messages.length; i++) { %>
+            <%- include('message',{message:messages[i],id:i}); %>
+            <% } %>    
+        </ul>
+    </div>
+      
+</body>
+</html>
