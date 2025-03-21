@@ -13,11 +13,17 @@ h1{
     padding: 20px;
 }
 ul{
-    padding: 30px;
     list-style: none;
 }
 div{
-    padding: 30px;
+    padding:30px 10%;
+}
+.details{
+    padding: 0px;
+    margin: 10%;
+    border: 5px solid yellowgreen;
+    border-width: 10px 5px;
+    border-radius: 20px;
 }
 .formDiv{
     height: 200px;
@@ -42,6 +48,7 @@ input{
 }
 input:focus{
     outline: 2px solid yellowgreen;
+    box-shadow: 0 0 15px 3px yellowgreen;
 }
 button,.button{
     text-decoration: none;
@@ -59,7 +66,7 @@ button,.button{
 .button{
     display: inline-block;
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 10%;
 }
 button:hover,.button:hover{
     border-color: yellowgreen;
@@ -68,25 +75,22 @@ button:hover,.button:hover{
 
 }
 span{
-    float: right;
-    width: 130px;    
-    height: 100%;
+text-align: left;
 }
 li{
     padding: 15px 20px ;
     background-color: yellowgreen;
     color: black;
     border-radius: 15px;
-    margin-top: 10px;
+    margin-top: 14px;
     font-size: 18px;
+
 }
 li:hover{
     opacity: .9;
 }
 li a{
-    float: right;
-    position: relative;
-    left: 130px;
+    margin: 0 5px;
 }
 p,h2{
     padding: 15px 20px ;
@@ -96,6 +100,18 @@ p,h2{
     font-size: 18px;
 }
 h2{
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
+    margin-top: 0;
+}
+.messageDiv,.messageDiv div{
+    float: right;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 280px;
+    overflow-x: hidden;
+}
+.messageDiv div{
+    width: 110px;
 }

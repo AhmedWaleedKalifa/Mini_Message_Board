@@ -8,9 +8,10 @@
 </head>
 <body>
     <h1>Mini Message Board</h1>
-    <div>
-        <a class="button" href="/new">Send Message</a>
+    <a class="button" href="/new">Send Message</a>
         <h2>Messages</h2>
+    <div>
+        
         <ul>
             <% for (let i = 0; i < messages.length; i++) { %>
             <%- include('message',{message:messages[i],id:i}); %>

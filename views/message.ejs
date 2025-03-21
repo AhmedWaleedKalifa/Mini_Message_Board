@@ -1,5 +1,11 @@
 <li>
     message:  <%= message.text%>
-    <span> <%= message.user %></span>
-    <a href='/message/<%= id %>'>open</a>
+    <div class="messageDiv">
+        <span> <%= message.user %></span>
+        <div>
+            <a href='/open/<%= id %>'>open</a>
+            <a href='/delete/<%= id %>'>delete</a>
+        </div>
+    </div>
+
 </li> 

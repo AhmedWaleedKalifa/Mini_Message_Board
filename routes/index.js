@@ -34,10 +34,16 @@ indexRouter.post("/new",(req,res)=>{
     })
     res.redirect("/");
 })
-indexRouter.get("/message/:id",(req,res)=>{
+indexRouter.get("/open/:id",(req,res)=>{
     const id=req.params.id;
     const message=messages[id]
     res.render("messageDetails",{message:message})
 })
+indexRouter.get("/delete/:id",(req,res)=>{
+    const id=req.params.id;
+    id&&id<messages.length?messages.splice(Number(id),1):res.status(404).send("Message not found");
+    res.redirect("/")
+})
+
 
 module.exports=indexRouter;
