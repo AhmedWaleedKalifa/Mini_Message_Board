@@ -17,9 +17,7 @@ const messages=[
         date:new Date()
     }
 ]
-async function getMessageById(id) {
-    return messages.find(message=>message.id===id)   
-}
+
 
 indexRouter.get("",(req,res)=>{
     res.render("index",{messages:messages});
