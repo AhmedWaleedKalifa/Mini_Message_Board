@@ -74,8 +74,10 @@ button:hover,.button:hover{
     background-color: black;
 
 }
-span{
-text-align: left;
+
+.text{
+    overflow:hidden;
+    max-width: 200px;
 }
 li{
     padding: 15px 20px ;
@@ -109,8 +111,13 @@ h2{
     padding: 0;
     margin: 0;
     text-align: left;
-    width: 280px;
-    overflow-x: hidden;
+    width: 240px;
+}
+.messageDiv span{
+    display: inline-block;
+    height: 100%;
+    width: 120px;
+    overflow-x:hidden;
 }
 .messageDiv div{
     width: 110px;
