@@ -9,10 +9,12 @@
 <body>
     <h1>Message Details</h1>
 <div class="details">
-    <h2>Message</h2>
-    <p>Author: <%= message.user %></p>
-    <p>Content: <%= message.text %></p>
-    <p>Adding Date: <%= message.date %></p>
+    <% if(locals.message){%>
+        <h2>Message</h2>
+        <p>Author: <%= message.username %></p>
+        <p>Content: <%= message.text %></p>
+        <p>Adding Date: <%= message.date %></p>
+    <% } %>
 </div>
     
 </body>
