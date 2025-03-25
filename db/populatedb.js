@@ -18,7 +18,7 @@ VALUES
 async function main(){
     console.log("running");
     const client =new Client({
-        connectionString: `postgres://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`,
+        connectionString:process.env.CONNECTION_STRING,
         ssl: {
           ca: fs.readFileSync(path.resolve(process.env.DB_SSL_CERT)).toString(),
           rejectUnauthorized: true 
